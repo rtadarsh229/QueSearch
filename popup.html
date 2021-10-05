@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueSearch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="radio" name="quesCount" id="allQues" value="allQues">
+        <label for="allQues">All Questions (Heavy on RAM)</label><br>
+
+        <input type="radio" name="quesCount" id="selectQues" value="selectQues" checked>
+        <label for="selectQues">Selected Questions</label><br>
+
+        <label for="startQues">Start Question</label>
+        <input id="startQues" style="margin: 5px;" name="startQues" type="text" value="1">
+
+        <label for="endQues">End Question</label>
+        <input id="endQues" style="margin: 5px;" name="endQues" type="text" value="10">
+
+        <button id="button" type="submit" style="text-align: center;">Search</button>
+    </form>
+    <pre id="log" style="color: Red; font-size: 15px;"></pre>
+    <script src="script.js"></script>
+</body>
+</html>

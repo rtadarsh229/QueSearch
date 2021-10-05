@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "QueSearch",
+    "version": "1.0",
+    "description": "Search Google Form questions on Google in One Click",
+    "author": "rtadarsh",
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png",
+        "512": "logo.png"
+    },
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_icon": "logo.png",
+        "default_title": "QueSearch"
+    },
+    "permissions": ["https://docs.google.com/*"]
+}
