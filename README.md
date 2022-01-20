@@ -18,6 +18,6 @@ Just be sure to be soft on your RAM 😁
 # Some more stuff
 This extension can be installed on all chromium browsers as well as firefox.
 
-As of now, this extension works only on Google Forms. Support for other forms (e.g Microsoft forms) maybe added later (or maybe you can do it).
+As of now, this extension works only on Google Forms. Support for other forms (e.g Microsoft forms) maybe added later (or maybe you can help me do it).
 
 If you find something broken, feel free to contribute ❤️
