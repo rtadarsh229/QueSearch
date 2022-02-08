@@ -10,10 +10,12 @@
         "128": "logo.png",
         "512": "logo.png"
     },
-    "browser_action":{
+    "browser_action": {
         "default_popup": "popup.html",
         "default_icon": "logo.png",
         "default_title": "QueSearch"
     },
-    "permissions": ["https://docs.google.com/*"]
+    "permissions": [
+        "https://docs.google.com/*"
+    ]
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,42 @@
     <title>QueSearch</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form>
-        <input type="radio" name="quesCount" id="allQues" value="allQues">
-        <label for="allQues">All Questions (Heavy on RAM)</label><br>
+    <div style="width: 200px;">
+        <form>
 
-        <input type="radio" name="quesCount" id="selectQues" value="selectQues" checked>
-        <label for="selectQues">Selected Questions</label><br>
+            <!-- Start Ques Field -->
+            <label for="startQues" style="padding-left: 28px;">From Question No.</label>
+            <input id="startQues" style="margin: 5px;" name="startQues" type="text" value="1">
 
-        <label for="startQues">Start Question</label>
-        <input id="startQues" style="margin: 5px;" name="startQues" type="text" value="1">
+            <!-- End Ques Radio -->
+            <input type="radio" id="endQuesRadio" style="margin: 5px;">
+            <label for="endQuesRadio">To Question No.</label>
 
-        <label for="endQues">End Question</label>
-        <input id="endQues" style="margin: 5px;" name="endQues" type="text" value="10">
+            <!-- End Ques Field -->
+            <input id="endQuesField" style="margin: 5px;" name="endQues" type="text" value="5">
 
-        <button id="button" type="submit" style="text-align: center;">Search</button>
-    </form>
+            <!-- Last Ques Radio -->
+            <input id="lastQuesRadio" style="margin: 5px;" name="lastQues" type="radio" checked>
+            <label for="lastQuesRadio">To Last Question</label><br>
+
+            <!-- Button -->
+            <div id="btn">
+                <button id="button" type="submit" style="text-align: center;"><img src="search.png" alt="Search"
+                        width="30px" height="30px"></button>
+            </div>
+        </form>
+    </div>
     <pre id="log" style="color: Red; font-size: 15px;"></pre>
+    <div>
+        <p style="font-size: 14px; padding-left: 10px;">To search all questions at once, select From Question No. = 1
+            and To Last
+            Question<br>Warning: This
+            maybe heavy
+            on RAM</p>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
