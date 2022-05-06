@@ -43,7 +43,7 @@ form.addEventListener("submit", function (event, activeTab) {
             code: `
             // var searchRegExp = /\s+/g;
             try{
-                const ques = document.getElementsByClassName("freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont");
+                const ques = document.getElementsByClassName("G4EHhc");
 
                 if(${startQues} > ques.length) {
                     throw new Error("Invalid Start Question value");
@@ -55,7 +55,7 @@ form.addEventListener("submit", function (event, activeTab) {
                     end = ques.length;
                 }
                 else end = Math.min(${endQues}, ques.length);
-                for(let i = start - 1; i < end; i++){
+                for(let i = start; i < end; i++){
                     let text = ques[i].innerHTML;
                     if(text[text.length-1] == '>'){
                         text = text.slice(0, text.search('<'))
